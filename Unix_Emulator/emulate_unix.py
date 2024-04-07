@@ -28,7 +28,7 @@ screen_resolution = (screen_width, screen_height)   # Golden Ratio
 
 main_window_dimensions = str(screen_resolution[0])+'x'+str(screen_resolution[1])
 window_main.geometry(main_window_dimensions)
-window_main.title("A simple unix emulator for windows pc's. created with python 3.8.2.   Clarusway")
+window_main.title("A simple unix emulator for windows pc's. created with python 3.8.2.   Clarusway - ZK")
 
 
 def reply(name):
@@ -69,8 +69,6 @@ def parse_the_command(name):
         TIME_info()
     else:
         command_output_display.insert(END, "!!! invalid command !!!\n")
-
-
 
     command_output_display.insert(END, "\n")
     
@@ -115,12 +113,6 @@ def TIME_info():
     now = datetime.now()
     command_output_display.insert(END, "datetime.now(): " + str(now) + '\n')
     command_output_display.insert(END, "datetime.now(): " + now.strftime("%d/%m/%Y %H:%M:%S") + '\n')
-
-
-
-
-
-
 
 
 
